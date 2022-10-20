@@ -1,0 +1,205 @@
+body {
+    font-family: Helvetica, sans-serif;
+    /* min-height: 100vh; */
+}
+
+.vanilla-bg {
+    background-color: rgb(227, 225, 225);
+}
+
+.chocholate-bg {
+    background-color: #9d5304;
+    /* color: white; */
+}
+
+.strawberry-bg {
+    background-color: #Fc58AD;
+}
+
+.coffee-bg {
+    background-color: #D2B48C;
+}
+
+.banana-bg {
+    background-color: #f2db55;
+}
+
+.order-bg {
+    background: radial-gradient(#e66465, #9198e5);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* things in both dropdowns */
+.select {
+    background-color: rgb(152, 152, 249);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+/* for JS */
+.select-clicked {
+    border: 2px solid black;
+    background-color: blue;
+}
+
+.select:hover {
+    background-color: rgb(255, 227, 175);
+}
+
+.selected {
+    margin-left: 1em;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+    margin-right: 1em;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+/* first dropdown */
+#dropdown-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 2em; */
+    margin-bottom: 2em;
+    width: 50%;
+    background-color: rgb(242, 174, 215);
+    border-radius: 1em;
+}
+
+.flavors {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.flavors-closed {
+    display: none;
+}
+
+.flavors-open {
+    display: block;
+    list-style: none;
+    padding: 0.2em 0.5em;
+    max-height: 33%;
+    /* max-height: 100px; */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.flavors li {
+    /* padding: 0.7em 0.5em; */
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    /* margin: 0.3em 0; */
+    cursor: pointer;
+    width: 100%;
+}
+
+.flavors li:hover {
+    background-color: rgb(255, 227, 175);
+    border-radius: 1em 0em 0em 1em;
+}
+
+.selected-base {
+    background-color: rgb(141, 179, 255);
+    border-radius: 1em 0em 0em 1em;
+}
+
+.flavors-selected {
+    background-color: rgb(141, 179, 255);
+}
+
+/* second dropdown */
+#dropdown-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(218, 145, 241);
+    border-radius: 1em;
+}
+
+.toppings {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.toppings-closed {
+    display: none;
+}
+
+.toppings-open {
+    display: block;
+    list-style: none;
+    padding: 0.2em 0.5em;
+    /* max-height: 33%; */
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.toppings li {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    margin: 0.3em 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+.toppings li:hover {
+    background-color: rgb(255, 227, 175);
+    border-radius: 1em 0em 0em 1em;
+}
+
+.toppings-selected {
+    background-color: rgb(141,179,255);
+    border-radius: 1em 0em 0em 1em;
+}
+
+/* Just decoration */
+#order-button {
+    margin-top: 2em;
+    font-size: 24px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.msg-hidden {
+    display: none;
+}
+
+.msg-show {
+    display: block;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Takehome project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+        <h1>Ice cream selection</h1>
+        
+        <h3>Select base</h3>
+        <div id="dropdown-1">
+            <div id="flavors-select" class="select">
+                <div id="flavor-selected" class="selected">Vanilla</div>
+                <div id="flavor-caret" class="caret"></div>
+            </div>
+            <ul class="flavors">  <!-- toggle with flavors-open-->
+                <li>Vanilla</li>
+                <li>Chocholate</li>
+                <li>Strawberry</li>
+                <li>Coffee</li>
+                <li>Banana</li>
+            </ul>
+        </div>
+
+        <h3>Select toppings</h3>
+        <div id="dropdown-2">   
+            <div id="toppings-select" class="select">
+                <div id="toppings-selected" class="selected">None</div>
+                <div id="toppings-caret" class="caret"></div>
+            </div>
+            <ul class="toppings">
+                <li id="select_none">None</li>
+                <li>Sprinkles</li>
+                <li>Cookie Dough</li>
+                <li>Syrup</li>
+                <li>Cherries</li>
+                <li>Strawberries</li>
+                <li>Gummy Worms</li>
+                <li>Chocholate Chip</li>
+                <li id="select_all">All</li>
+            </ul>
+        </div>
+
+        <button id="order-button">Order</button>
+        <p id="msg" class="msg-hidden">Order placed!</p>
+
+    </div>
+
+  </body>
+
+</html>
